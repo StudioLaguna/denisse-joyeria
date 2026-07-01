@@ -22,12 +22,6 @@ export function StorePage({ onAdminTrigger }: Props) {
   const { productos, slides, loading } = useStore()
   const cart = useCart()
   const [filtro, setFiltro] = useState<'todas' | Categoria>('todas')
-  const [logoClicks, setLogoClicks] = useState(0)
-
-  // El botón de administración ahora es visible, no necesitamos el truco del logo
-  const handleLogoClick = () => {
-    // Mantener por si acaso, pero ya no es la vía principal
-  }
 
   const filtrados = filtro === 'todas'
     ? productos
@@ -44,14 +38,14 @@ export function StorePage({ onAdminTrigger }: Props) {
       >
         <div className="flex items-center gap-3">
           <img src="/LogoD.png" alt="Denisse Logo" className="w-10 h-10 object-contain" />
-          <button onClick={handleLogoClick} className="text-left select-none">
+          <div className="text-left select-none">
             <span className="font-display text-xl font-light" style={{ color: '#c4a882', fontStyle: 'italic', letterSpacing: '0.12em' }}>
               Denisse
             </span>
             <span className="block" style={{ fontSize: '0.5rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#6b6158' }}>
               JOYERÍA Y BISUTERÍA
             </span>
-          </button>
+          </div>
         </div>
 
         <div className="flex items-center gap-3 md:gap-4">
