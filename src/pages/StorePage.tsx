@@ -37,7 +37,7 @@ export function StorePage({ onAdminTrigger }: Props) {
         style={{ background: 'rgba(15,14,12,0.97)', borderBottom: '1px solid rgba(139,107,74,0.12)' }}
       >
         <div className="flex items-center gap-3">
-          <img src="/LogoD.png" alt="Denisse Logo" className="w-10 h-10 object-contain" />
+          <img src="/logo-cafe-claro-512.webp" alt="Denisse Logo" className="w-10 h-10 object-contain" />
           <div className="text-left select-none">
             <span className="font-display text-xl font-light" style={{ color: '#c4a882', fontStyle: 'italic', letterSpacing: '0.12em' }}>
               Denisse
